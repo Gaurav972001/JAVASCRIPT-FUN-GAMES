@@ -1,4 +1,4 @@
-//Challenge 1:Your Age in Days
+//GAME 1
 function ageInDays(){
 
     var birthYear=prompt("What year were your born?");
@@ -12,7 +12,7 @@ function ageInDays(){
 function reset(){
     document.getElementById('ageInDays').remove();
 }
-//challenge 2
+//GAME 2
 
 function generateCat(){
     var image=document.createElement('img');
@@ -27,7 +27,7 @@ function catReset(){
     document.getElementById('cat-img').remove();
 }
 
-//challenge 3:
+//GAME 3:
 
 function rpsGame(yourchoice){
     console.log(yourchoice);
@@ -111,7 +111,7 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage)
 
 }
 
-//challenge 4
+//GAME 4
 
 var all_buttons=document.getElementsByTagName('button');
 
