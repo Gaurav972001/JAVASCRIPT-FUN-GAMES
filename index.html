@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun Project</title>
+</head>
+
+<body>
+
+    <div class="container-1">
+        <h2>Game 1 : your age in days</h1>
+        <div class="flex-box-container-1 ">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">CLICK ME</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">RESET</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Game 2: Cat Generator</h2>
+            <button style="margin:20px" class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+            <button style="margin:20px" class="btn btn-danger" onclick="catReset()">RESET CAT</button>
+        <div class="flex-box-container-2" id="flex-cat-gen"></div>
+    </div>
+
+    <div class="container-3">
+        <h2>Game 3:Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" onclick="rpsGame(this)" src="https://images-na.ssl-images-amazon.com/images/I/61m9jG%2Bjj-L._AC_SY355_.jpg" height=150 width=150 alt="rock">
+            <img id="paper" onclick="rpsGame(this)" src="https://shop.dkoutlet.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/C/D/CD-8715_L.jpg" height=150 width=150 alt="paper">
+            <img id="scissors" onclick="rpsGame(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefTfAh1tVpySwf4ZBOGz-5VA0y-XF1dE1U6Q9S1iKruyvWdhbb6hu8chdGcwnxXY19mA&usqp=CAU" height=150 width=150 alt="scissor">
+        </div>
+        <div class="play-again">
+            <button style="margin: 10px;" class="btn btn-danger" onclick="window.location.reload();">Play again</button>
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2>Game 4: Change the color of All buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Binge</button>
+            <button class="btn btn-danger">Yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">facebook</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
